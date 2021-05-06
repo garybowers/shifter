@@ -36,7 +36,7 @@ func Yaml(path string, objects []lib.K8sobject) {
 		createFolder(filepath.Dir(outPath))
 		_, err := os.Create(outPath)
 		if err != nil {
-			fmt.Println(err)
+			log.Println(err)
 		}
 
 		for _, v := range objects {
@@ -65,7 +65,7 @@ func Yaml(path string, objects []lib.K8sobject) {
 
 			f, err := os.Create(outPath + "/" + no + "-" + kind + ".yaml")
 			if err != nil {
-				fmt.Println(err)
+				log.Println(err)
 			}
 			defer f.Close()
 
@@ -74,7 +74,7 @@ func Yaml(path string, objects []lib.K8sobject) {
 			e := k8sjson.NewYAMLSerializer(k8sjson.DefaultMetaFactory, nil, nil)
 			err = e.Encode(v.Object, w)
 			if err != nil {
-				fmt.Println(err)
+				log.Println(err)
 			}
 			w.Flush()
 		}
