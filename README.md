@@ -12,6 +12,18 @@ Processors are the converts from openshift to kubernetes.
 
 -----------------
 
+## Build the tool
+
+Once repo downloaded, run the following to build the tool for executable file
+
+```
+ git checkout <release>  (example: release=0.12)
+ 
+ go build 
+
+```
+
+
 ## Inputs
 
 Inputs are readers for your existing Openshift application deployment methods
