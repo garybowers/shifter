@@ -2,16 +2,17 @@ package input
 
 import (
 	"fmt"
-	gyaml "github.com/ghodss/yaml"
-	yaml "gopkg.in/yaml.v3"
 	"io"
 	"io/ioutil"
 	"log"
 	"os"
 	"path/filepath"
-	"shifter/lib"
-	"shifter/processor"
 	"strings"
+
+	"github.com/garybowers/shifter/lib"
+	"github.com/garybowers/shifter/processor"
+	gyaml "github.com/ghodss/yaml"
+	yaml "gopkg.in/yaml.v3"
 	//"regexp"
 )
 

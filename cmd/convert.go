@@ -15,11 +15,12 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
 	"log"
-	generators "shifter/generators"
-	inputs "shifter/inputs"
 	"strings"
+
+	generators "github.com/garybowers/shifter/generators"
+	inputs "github.com/garybowers/shifter/inputs"
+	"github.com/spf13/cobra"
 )
 
 var (

@@ -19,10 +19,10 @@ import (
 	//"gopkg.in/yaml.v3"
 	"io/ioutil"
 	//"log"
-	//"shifter/processor"
+	//"github.com/garybowers/shifter/processor"
 	"sigs.k8s.io/yaml"
 	//v1 "github.com/openshift/api/template/v1"
-	lib "shifter/lib"
+	lib "github.com/garybowers/shifter/lib"
 )
 
 type OSTemplate struct {
