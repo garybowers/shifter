@@ -15,13 +15,16 @@ package generator
 
 import (
 	"fmt"
-	"gopkg.in/yaml.v3"
 	"log"
 	"os"
+
+	"gopkg.in/yaml.v3"
+
 	//"reflect"
 	"regexp"
-	lib "shifter/lib"
 	"strconv"
+
+	lib "github.com/garybowers/shifter/lib"
 )
 
 type Chart struct {

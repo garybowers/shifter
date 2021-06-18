@@ -16,13 +16,14 @@ package processor
 import (
 	"encoding/json"
 	"fmt"
+	"os"
+
+	"github.com/garybowers/shifter/lib"
 	osappsv1 "github.com/openshift/api/apps/v1"
 	osroutev1 "github.com/openshift/api/route/v1"
 	apiv1 "k8s.io/api/core/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	kjson "k8s.io/apimachinery/pkg/runtime/serializer/json"
-	"os"
-	"shifter/lib"
 )
 
 func int32Ptr(i int32) *int32 { return &i }

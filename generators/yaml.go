@@ -16,12 +16,13 @@ package generator
 import (
 	"bufio"
 	"fmt"
-	k8sjson "k8s.io/apimachinery/pkg/runtime/serializer/json"
 	"log"
 	"os"
 	"path/filepath"
-	"shifter/lib"
 	"strconv"
+
+	"github.com/garybowers/shifter/lib"
+	k8sjson "k8s.io/apimachinery/pkg/runtime/serializer/json"
 )
 
 func Yaml(path string, objects []lib.K8sobject) {

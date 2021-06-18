@@ -14,12 +14,13 @@ limitations under the license.
 package processor
 
 import (
+	"log"
+	"strings"
+
 	osappsv1 "github.com/openshift/api/apps/v1"
 	appsv1 "k8s.io/api/apps/v1"
 	apiv1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"log"
-	"strings"
 )
 
 func convertDeploymentConfigToDeployment(OSDeploymentConfig osappsv1.DeploymentConfig, flags map[string]string) appsv1.Deployment {

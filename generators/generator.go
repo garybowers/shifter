@@ -15,9 +15,10 @@ package generator
 
 import (
 	"fmt"
-	k8sjson "k8s.io/apimachinery/pkg/runtime/serializer/json"
 	"os"
-	"shifter/lib"
+
+	"github.com/garybowers/shifter/lib"
+	k8sjson "k8s.io/apimachinery/pkg/runtime/serializer/json"
 )
 
 func serializer(input lib.K8sobject) {
