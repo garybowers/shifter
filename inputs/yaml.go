@@ -9,8 +9,8 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"shifter/lib"
-	"shifter/processor"
+	"github.com/garybowers/shifter/lib"
+	"github.com/garybowers/shifter/processor"
 	"strings"
 	//"regexp"
 )

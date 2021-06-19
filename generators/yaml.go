@@ -20,7 +20,7 @@ import (
 	"log"
 	"os"
 	"path/filepath"
-	"shifter/lib"
+	"github.com/garybowers/shifter/lib"
 	"strconv"
 )
 

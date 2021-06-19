@@ -20,7 +20,7 @@ import (
 	"os"
 	//"reflect"
 	"regexp"
-	lib "shifter/lib"
+	lib "github.com/garybowers/shifter/lib"
 	"strconv"
 )
 
